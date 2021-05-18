@@ -6,13 +6,13 @@
 
 function preload() {
     //load the images here
-    bgimg=loadImage("images/garden.png");
-    catimg1=loadAnimation("images/cat1.png");
-    mouseimg1=loadAnimation("images/mouse1.png");
-    catimg2=loadAnimation("images/cat2.png","images/cat3.png");
-    mouseimg2=loadAnimation("images/mouse2.png","images/mouse3.png");
-    catimg3=loadAnimation("images/cat4.png");
-    mouseimg3=loadAnimation("images/mouse4.png");
+    bgimg=loadImage("garden.png");
+    catimg1=loadAnimation("cat1.png");
+    mouseimg1=loadAnimation("mouse1.png");
+    catimg2=loadAnimation("cat2.png","cat3.png");
+    mouseimg2=loadAnimation("mouse2.png","mouse3.png");
+    catimg3=loadAnimation("cat4.png");
+    mouseimg3=loadAnimation("mouse4.png");
 
 }
 
@@ -36,12 +36,12 @@ function draw() {
     if (cat.x - mouse.x < (cat.width-mouse.width)/2) {
         cat.velocityX=0;
         cat.addAnimation("cat 4th img",catimg3);
-        cat.changeAnimation("cat 4th img");
+        cat.changeAnimation(catimg3);
         cat.x=300;
         cat.scale=0.2;
 
         mouse.addAnimation("mouse 4th img",mouseimg3);
-        mouse.changeAnimation("mouse 4th img");
+        mouse.changeAnimation(mouseimg3);
         mouse.scale=0.15;
 
 
