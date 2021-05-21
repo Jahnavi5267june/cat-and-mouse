@@ -36,12 +36,11 @@ function draw() {
     if (cat.x - mouse.x < (cat.width-mouse.width)/2) {
         cat.velocityX=0;
         cat.addAnimation("cat 4th img",catimg3);
-        cat.changeAnimation(catimg3);
+       
         cat.x=300;
         cat.scale=0.2;
 
         mouse.addAnimation("mouse 4th img",mouseimg3);
-        mouse.changeAnimation(mouseimg3);
         mouse.scale=0.15;
 
 
@@ -58,10 +57,10 @@ function keyPressed(){
   if (keyCode===LEFT_ARROW) {
       cat.velocityX=-5;
       cat.addAnimation("catRunning",catimg2);
-      cat.changeAnimation(catimg2);
+     
 
       mouse.addAnimation("mouseTeasing",mouseimg2);
-      mouse.changeAnimation(mouseimg2);
+      
       mouse.frameDelay=25;
   }
 
